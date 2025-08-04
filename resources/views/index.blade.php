@@ -295,7 +295,7 @@
         <div class="text-center">
 
             <h2 class="d-inline-block fw-bold mb-3 px-5 py-2"
-                style="color: #9d7651; border-radius: 4px;">Facilities</h2>
+                style="color: #fff; background-color:#9d7651; border-radius: 4px;">Facilities</h2>
 
         </div>
         <div class="row g-1">

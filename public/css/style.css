@@ -264,8 +264,8 @@ h2::selection {
 
 /* facilities Start */
 .facilities {
-    /*background: linear-gradient(rgba(22, 21, 21, 0.5), rgba(4, 4, 4, 0.9)), url(../images/facilitiesImg/forback.jpg);*/
-    background-color: #000;
+    background: linear-gradient(rgba(22, 21, 21, 0.5), rgba(4, 4, 4, 0.9)), url(../images/facilitiesImg/forback.jpg);
+    /* background-color: #000; */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
