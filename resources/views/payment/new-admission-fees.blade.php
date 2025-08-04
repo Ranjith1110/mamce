@@ -1,15 +1,6 @@
     @extends('includes.header')
     @section('content')
 
-    <!-- Spinner Start here -->
-    <div id="spinner"
-        class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End here -->
-
     <!-- Navbar Start here -->
     <div id="header"></div>
     <!-- Navbar End here -->
@@ -74,7 +65,7 @@
                         </div>
                         <button type="submit" name="icici" value="icici" class="btn px-4 py-2" style="color: #fff; background-color: #9d7651;">Pay By
                             ICICI (Recommended)</button>
-                            <button type="submit" name="razorpay" value="razorpay" class="btn px-4 py-2" style="color: #fff; background-color: #9d7651;">Pay By
+                        <button type="submit" name="razorpay" value="razorpay" class="btn px-4 py-2" style="color: #fff; background-color: #9d7651;">Pay By
                             Razorpay</button>
                     </form>
                 </div>
@@ -85,69 +76,69 @@
     <!-- Form End -->
 
 
-<script>
-    $(document).ready(function (){
-        $("#new-admission-fees-form").validate({
-            rules: {
-                reg_no:{
-                    required: true,
-                    number: true,
-                    minlength: 12,
-                    maxlength: 12,
+    <script>
+        $(document).ready(function() {
+            $("#new-admission-fees-form").validate({
+                rules: {
+                    reg_no: {
+                        required: true,
+                        number: true,
+                        minlength: 12,
+                        maxlength: 12,
+                    },
+                    student_name: {
+                        required: true,
+                    },
+                    contact_email: {
+                        required: true,
+                        email: true,
+                    },
+                    phone_no: {
+                        required: true,
+                        number: true,
+                        minlength: 10,
+                        maxlength: 15,
+                    },
+                    pay_for: {
+                        required: true,
+                    },
+                    amount: {
+                        required: true,
+                        number: true,
+                    },
                 },
-                student_name: {
-                    required: true,
+                messages: {
+                    reg_no: {
+                        required: 'Fill Register number',
+                        number: 'Must be a valid Register number',
+                        minlength: 'Phone number must be at least 12 digits long.',
+                        maxlength: 'Phone number must not exceed 12 digits.',
+                    },
+                    student_name: {
+                        required: 'Please enter your name',
+                    },
+                    contact_email: {
+                        required: 'Please enter email',
+                        email: 'Enter a valid email address',
+                    },
+                    phone: {
+                        required: 'Fill phone number',
+                        number: 'Must be a valid phone number',
+                        minlength: 'Phone number must be at least 10 digits long.',
+                        maxlength: 'Phone number must not exceed 15 digits.',
+                    },
+                    pay_for: {
+                        required: 'Please enter your payfor',
+                    },
+                    amount: {
+                        required: 'Fill Amount',
+                        number: 'Must be a valid amount',
+                    },
                 },
-                contact_email: {
-                    required: true,
-                    email: true,
-                },
-                phone_no: {
-                    required: true,
-                    number: true,
-                    minlength: 10,
-                    maxlength: 15,
-                },
-                pay_for: {
-                    required: true,
-                },
-                amount: {
-                    required: true,
-                    number: true,
-                },
-            },
-            messages: {
-                reg_no: {
-                    required: 'Fill Register number',
-                    number: 'Must be a valid Register number',
-                    minlength: 'Phone number must be at least 12 digits long.',
-                    maxlength: 'Phone number must not exceed 12 digits.',
-                },
-                student_name: {
-                    required: 'Please enter your name',
-                },
-                contact_email: {
-                    required: 'Please enter email',
-                    email: 'Enter a valid email address',
-                },
-                phone: {
-                    required: 'Fill phone number',
-                    number: 'Must be a valid phone number',
-                    minlength: 'Phone number must be at least 10 digits long.',
-                    maxlength: 'Phone number must not exceed 15 digits.',
-                },
-                pay_for: {
-                    required: 'Please enter your payfor',
-                },
-                amount: {
-                    required: 'Fill Amount',
-                    number: 'Must be a valid amount',
-                },
-            },
-            // submitHandler: function () {
-            //     $("#tution-fees-form")[0].submit();
-            // }
+                // submitHandler: function () {
+                //     $("#tution-fees-form")[0].submit();
+                // }
+            });
         });
-    });
-</script>
+    </script>
     @endsection
