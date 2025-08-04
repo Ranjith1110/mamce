@@ -1,0 +1,16 @@
+[05-Feb-2025 16:42:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Middleware\Authenticate" not found in /home/ma2mc0e/public_html/app/Http/Middleware/Authenticate.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/ma2mc0e/public_html/app/Http/Middleware/Authenticate.php on line 8
+[05-Feb-2025 16:42:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\VerifyCsrfToken" not found in /home/ma2mc0e/public_html/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/ma2mc0e/public_html/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[05-Feb-2025 16:42:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Middleware\TrustProxies" not found in /home/ma2mc0e/public_html/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/ma2mc0e/public_html/app/Http/Middleware/TrustProxies.php on line 8
+[01-Apr-2025 09:00:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Middleware\TrustHosts" not found in /home/ma2mc0e/public_html/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/ma2mc0e/public_html/app/Http/Middleware/TrustHosts.php on line 7

@@ -1,0 +1,12 @@
+[01-Apr-2025 09:00:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/ma2mc0e/public_html/app/Providers/AppServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/ma2mc0e/public_html/app/Providers/AppServiceProvider.php on line 7
+[01-Apr-2025 09:01:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/ma2mc0e/public_html/app/Providers/AppServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/ma2mc0e/public_html/app/Providers/AppServiceProvider.php on line 7
+[01-Apr-2025 09:01:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/ma2mc0e/public_html/app/Providers/AppServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/ma2mc0e/public_html/app/Providers/AppServiceProvider.php on line 7
