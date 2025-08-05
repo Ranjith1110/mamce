@@ -308,7 +308,7 @@
             </div>
             <div class="col-12 col-lg-6 text-center">
                 <img class="img-fluid" style="max-height: 400px;"
-                    src="{{asset('images/administrationImg/jsImg.jpg')}}" alt="">
+                    src="{{asset('images/administrationImg/Arham.png')}}" alt="">
             </div>
         </div>
         <div class="modal fade" id="popupTrustee" tabindex="-1" aria-labelledby="popupFormLabel"
