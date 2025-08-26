@@ -192,6 +192,27 @@
             font-size: 0.8rem;
         }
     }
+
+    .marquee {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marqueeScroll 60s linear infinite !important;
+    }
+
+    @keyframes marqueeScroll {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .new-gif {
+        width: 35px !important;
+        height: auto;
+    }
 </style>
 
 <body onload="hideLoader()">
@@ -210,7 +231,23 @@
         </div>
     </div>
 
+    <!-- Top Navbar Start here -->
     <div class="container-fluid fixed-top p-0" style="background-color: #dfcfc1;">
+
+
+        <div class="marquee-area bg-body py-1" style="overflow:hidden; white-space:nowrap;">
+            <div class="d-flex align-items-center marquee">
+                <div class="me-5">
+                    <a href="{{asset('images/convocation.jpg')}}" class="fw-bold text-primary">23rd Convocation</a>
+                    <img class="new-gif" src="{{asset('images/new.gif')}}" alt="new">
+                </div>
+                <div class="me-5">
+                    <a href="{{asset('images/induction.jpg')}}" class="fw-bold text-primary">29th Induction Day</a>
+                    <img class="new-gif" src="{{asset('images/new.gif')}}" alt="new">
+                </div>
+            </div>
+        </div>
+
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3">
@@ -247,7 +284,7 @@
     <!-- Top Navbar End here -->
 
     <!-- Navbar and banner Start here -->
-    <nav id="navbar" class="fixed-top navbar navbar-expand-lg navbar-light px-4 py-1 mt-lg-14 mt-0">
+    <nav id="navbar" class="fixed-top navbar navbar-expand-lg navbar-light px-4 py-1 mt-lg-20 mt-7">
         <a href="" class="navbar-brand d-flex align-items-center">
             <img width="300px" class="mamce-logo m-0" src="{{asset('images/mamce-logo.png')}}" alt="">
         </a>
@@ -368,6 +405,9 @@
             </div>
         </div>
     </nav>
+    <!-- Navbar and banner End here -->
+
+
     <a href="https://wa.me/+918015211313?text=Hi, Welcome to MAMCE. How may I help you?" target="_blank" class="whatsapp-button">
         <img src="{{asset('images/whatsapp.png')}}" alt="WhatsApp">
     </a>
