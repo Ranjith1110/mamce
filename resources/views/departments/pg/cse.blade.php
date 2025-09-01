@@ -1,7 +1,6 @@
 @extends('includes.header')
 @section('content')
 
-
 <!-- Vertical Button Start here -->
 <button style="background-color: #9d7651; border: 2px solid #dfcfc1;"
     class="vertical-button text-white px-md-2 px-0 py-2 rounded text-uppercase" data-bs-toggle="modal"
